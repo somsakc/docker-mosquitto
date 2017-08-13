@@ -16,7 +16,7 @@ Run Docker with minimal options by using default configuration supplied by Docke
 For example, TZ=Asia/Bangkok
 
 ### Alternative 2:
-Use a custom configuration file by mounting to local /mosquitto/config/mosquitto.conf file.
+Use a custom configuration file by mounting to local /mosquitto/config/mosquitto.conf file.<br>
 `$ docker run -d -e TZ=<timezone> -p 1883:1883 -v mosquitto.conf:/mosquitto/config/mosquitto.conf mbixtech/arm32v7-mosquitto`
 
 In /mosquitto.conf configuration file, it can be put the following parameters pointing specific directories.
@@ -26,7 +26,7 @@ persistence_location /mosquitto/data/
 log_dest file /mosquitto/log/mosquitto.log
 
 ### Alternative 3:
-Map local directories to all specific directories of Docker container.
+Map local directories to all specific directories of Docker container.<br>
 `$ docker run -d -e TZ=<timezone> -p 1883:1883 -v config:/mosquitto/config -v data:/mosquitto/data -v log:/mosquitto/log mbixtech/arm32v7-mosquitto`
 
 ## Credits
