@@ -10,7 +10,7 @@ Three directories have been created in the image to be used for configuration, p
 
 ## Usage
 ### Alternative 1:
-Run Docker with minimal options by using default configuration supplied by Docker image.
+Run Docker with minimal options by using default configuration supplied by Docker image.<br>
 `$ docker run -d -e TZ=<timezone> -p 1883:1883 mbixtech/arm32v7-mosquitto`
 
 For example, TZ=Asia/Bangkok
